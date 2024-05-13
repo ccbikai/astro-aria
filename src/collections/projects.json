@@ -1,9 +1,9 @@
 [
 	{
 		"name": "Email.ML",
-		"description": "Create websites with Tailwind CSS",
+		"description": "Minimalist temporary Email.",
 		"image": "/assets/images/projects/email.ml.png",
-		"url": "Minimalist temporary Email."
+		"url": "https://email.ml"
 	},
 	{
 		"name": "DNS.Surf",
