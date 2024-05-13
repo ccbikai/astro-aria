@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Email.ML",
+		"description": "Create websites with Tailwind CSS",
+		"image": "/assets/images/projects/email.ml.png",
+		"url": "Minimalist temporary Email."
+	},
+	{
+		"name": "DNS.Surf",
+		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
+		"image": "/assets/images/projects/dns.surf.png",
+		"url": "https://dns.surf"
+	},
+	{
+		"name": "HTML.ZONE",
+		"description": "Web Toolbox.",
+		"image": "/assets/images/projects/html.zone.png",
+		"url": "https://html.zone"
+	}
+]

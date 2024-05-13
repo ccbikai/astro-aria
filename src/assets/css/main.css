@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add Your Custom CSS Here */
+
+.prose img{
+    border-radius: 30px;
+}
+
+#sun{
+    transform: translate3d(0, 0px, 0);
+}
+#moon{
+    transform: translate3d(0, 0px, 0);
+}
+
+#darkToggle:hover #sun{
+    transform: translate3d(0, 10px, 0);
+}
+
+#darkToggle:hover #moon{
+    transform: translate3d(0, 10px, 0);
+}
+
+html.dark #darkToggle:hover .horizon{
+    border-color: #718096 !important;
+}
+
+.horizon .setting{
+        animation: 1s ease 0s 1 setting;
+}
+.horizon .rising{
+        animation: 1s ease 0s 1 rising;
+    }
+
+@keyframes setting {
+    0% {
+        transform: translate3d(0, 10px, 0)
+    }
+
+    40% {
+        transform: translate3d(0, -2px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 30px, 0)
+    }
+}
+
+@keyframes rising {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0)
+    }
+
+    40% {
+        opacity: 1;
+        transform: translate3d(0, -2px, 0)
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 10, 0)
+    }
+}
