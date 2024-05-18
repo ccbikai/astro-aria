@@ -13,7 +13,7 @@ const { title } = Astro.props;
     <title>{title}</title>
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
-    <script>
+    <script is:inline>
       if (typeof Storage !== 'undefined') {
         if (
           localStorage.getItem('dark_mode') &&
