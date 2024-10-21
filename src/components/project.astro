@@ -17,7 +17,7 @@ const { name, description, url, image } = Astro.props;
     class="relative z-30 block duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1"
   >
     <span class="block w-full">
-      <img src={image} class="w-full h-auto rounded-lg aspect-[16/9]" />
+      <img src={image} class="w-full h-auto rounded-lg aspect-[16/9] object-cover" />
     </span>
     <span class="block w-full px-1 mt-5 mb-1 sm:mt-3">
       <span
@@ -57,7 +57,7 @@ const { name, description, url, image } = Astro.props;
           ></svg
         >
       </span>
-      <span class="text-sm text-neutral-600 dark:text-neutral-400"
+      <span class="text-sm text-neutral-600 dark:text-neutral-400 block truncate"
         >{description}</span
       >
     </span>
