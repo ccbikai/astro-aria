@@ -28,6 +28,10 @@ html.dark #darkToggle:hover .horizon {
   border-color: #718096 !important;
 }
 
+html.dark {
+    color-scheme: dark;
+}
+
 .horizon .setting {
   animation: 1s ease 0s 1 setting;
 }
