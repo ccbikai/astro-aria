@@ -4,11 +4,23 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-const postsLoop = allPosts.slice(0, count).map((post) => {
-	return {
-		...(post.data || {}),
-		link: `/post/${post.slug}`,
-	};
+function parseDate(dateStr) {
+  const [month, day, year] = dateStr.split(" ");
+  return new Date(`${month} ${parseInt(day)}, ${year}`);
+}
+
+const sortedPosts = allPosts
+  .map((post) => ({
+    ...post,
+    date: parseDate(post.data.dateFormatted),
+  }))
+  .sort((a, b) => b.date.getTime() - a.date.getTime());
+
+const postsLoop = sortedPosts.slice(0, count).map((post) => {
+  return {
+    ...(post.data || {}),
+    link: `/post/${post.slug}`,
+  };
 });
 ---
 
@@ -25,7 +37,7 @@ const postsLoop = allPosts.slice(0, count).map((post) => {
           <h2 class="flex items-center mb-3">
             <a
               href={post.link}
-              class="text-xl font-bold leading-tight tracking-tight sm:text-2xl dark:text-neutral-100"
+              class="text-base font-bold leading-tight tracking-tight sm:text-lg dark:text-neutral-100"
             >
               {post.title}
             </a>
