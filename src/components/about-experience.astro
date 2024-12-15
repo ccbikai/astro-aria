@@ -1,5 +1,5 @@
 ---
-const { logo, dates, role, company, description } = Astro.props;
+const { logo, dates, role, company, description, skills } = Astro.props;
 ---
 
 <div class="relative flex flex-col justify-start pl-12">
@@ -19,4 +19,8 @@ const { logo, dates, role, company, description } = Astro.props;
   <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
     {description}
   </p>
+  <p class="my-1 text-sm font-medium dark:text-neutral-300">
+    Skills:<p class="mb-0.5 text-sm font-light text-neutral-600 dark:text-neutral-400">{skills}</p>
+  </p>
+  
 </div>

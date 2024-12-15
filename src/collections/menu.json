@@ -12,6 +12,10 @@
 		"url": "/projects"
 	},
 	{
+		"name": "Resume",
+		"url": "/resume"
+	},
+	{
 		"name": "About",
 		"url": "/about"
 	}

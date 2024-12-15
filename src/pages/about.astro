@@ -8,23 +8,23 @@ import Layout from "../layouts/main.astro";
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
+      title="About me 🧑‍💻"
+      description="Hey 👋 I'm an experienced professional with around 4.5 years of experience focused in Machine Learning 🧠, Predictive modeling 📉, Data Analytics 📊 and Visualization 💻. While working as a research assistant, I pursue master's degree 🎓 focused on Data Analytics at University at Buffalo, The State University of New York. I'm passionate about solving complex problems 📝, building new products 📦 and learning new technology 🧑‍💻."
     />
 
-    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+    <img src="/assets/images/about-image.png" class="relative z-30 w-full my-5 rounded-xl" />
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      Front-end cutter 🧑🏻‍💻, back-end amateur 🤷🏻‍♂️, operations digging holes person 🤦🏻‍♂️.
+      Mid-Level Data Scientist 🧑🏻‍💻, Data Analyst 📁 and Research Driven Professional 🤓.
     </p>
 
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
-      Experience
+      Work Experience
     </h2>
     <div class="px-5 py-10">
       {
@@ -37,24 +37,33 @@ import Layout from "../layouts/main.astro";
                 company={experience.company}
                 description={experience.description}
                 logo={experience.logo}
+                skills={experience.skills}
               />
             </div>
           )
         })
       }
     </div>
-
+    
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Extra Curriculars</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Apart from coding and learning, I spend some of my leisure time playing soccer ⚽, travelling 🌍, adventure sports 🪂, photography 📸 and teaching 📚.
+    </p>
+      
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      If you want to stay up to date with my work be sure to <a
-        href="https://twitter.com/ccikai"
+      Through this QuantAnalytics portfolio, I envision to share my professional and life experiences to all. I firmly believe that change is the 
+      only constant and learning is the only mindset. I look forward to sharing my experiences through blogs and pictures so <a
+        href="https://github.com/quicksid"
         target="_blank"
-        class="text-indigo-600 underline">follow me on twitter</a
-      >, or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline"
-        >email</a
-      > and I'll be sure to get back to you.
+        class="text-indigo-600 underline"
+      >stay tuned</a> to know more! ✨ </br ></br >
+      Also, you are welcome to connect through <a href="mailto:siddharth.haveliwala0610@gmail.com" class="text-indigo-600 underline"
+        >email</a> and I'll be sure to get back to you.
     </p>
   </section>
 </Layout>

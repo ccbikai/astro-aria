@@ -1,38 +1,74 @@
 [
 	{
-		"name": "TempMail.Best",
-		"description": "Best Temporary Email.",
-		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best"
+		"name": "Enhanced Security for Schools",
+		"description": "Optimizing patrolling for enhanced security.",
+		"image": "/assets/images/projects/bsg-thesis.png",
+		"url": "https://github.com/quicksid/Private_Projects",
+		"detail_description": "As part of thesis, this project utilizes a bayesian stackelberg game theoratic approach with predictive analytics to finding the most optimal patrolling routes for increasing school security.",
+		"tools": "Python, Scikit-Learn, SciPy, SimPy, Util, Matplotlib, Game theory",
+		"year": 2024
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+		"name": "Drowsiness Detection System",
+		"description": "Best driving companion",
+		"image": "/assets/images/projects/drowsiness-detection-system-img.png",
+		"url": "https://github.com/quicksid/Drowsiness_Detection_System",
+		"detail_description": "This projects aims to develop AI-powered alertness system for drivers using eye and face movement tracking.",
+		"tools": "Python, OpenCV, TensorFlow, Keras, Matplotlib, Jupyter Notebook",
+		"year": 2024
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"name": "Predicting IPO Performance",
+		"description": "Identify right IPO to invest into.",
+		"image": "/assets/images/projects/ipo-pred-img.png",
+		"url": "https://github.com/quicksid/IPO_Prediction_week4",
+		"detail_description": "Built a machine learning model to predict IPO wins or losses on the listing day, achieving 82.5% accuracy.",
+		"tools": "Python, Numpy, Pandas, Keras, Seaborn, bayesian optimization, Visual Studio",
+		"year": 2023
 	},
 	{
-		"name": "Sink",
-		"description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
-		"image": "/assets/images/projects/sink.cool.png",
-		"url": "https://sink.cool"
+		"name": "Gait Pattern Recognition",
+		"description": "A futuristic gait rehabilitation method.",
+		"image": "/assets/images/projects/gait-pattern-img.png",
+		"url": "https://github.com/quicksid/Hospital-Customers-Assignment",
+		"detail_description": "Engineered state-of-the-art adaptive gait rehabilitation technique by integrating Proximal Policy Optimization with Algae Algorithm, optimizing gait metrics with SHAP analysis for impacting physical recovery.",
+		"tools": "Python, Reinforcement Learning, PPO, CNN, Algae Algorithm",
+		"year": 2024
 	},
 	{
-		"name": "BroadcastChannel",
-		"description": "Turn your Telegram Channel into a MicroBlog.",
-		"image": "/assets/images/projects/broadcast-channel.png",
-		"url": "https://github.com/ccbikai/BroadcastChannel"
+		"name": "Danger Solar Flare Prediction",
+		"description": "Save earth atmosphere from impact.",
+		"image": "/assets/images/projects/solar-flare-img.png",
+		"url": "https://github.com/quicksid/Time_Series_MidPresentation",
+		"detail_description": "Forecasted high-intensity solar flare impacts on Earth's atmosphere using time series models (ARIMA, VAR) and advanced EDA on the SWAN-SF dataset.",
+		"tools": "R Programming, Time Series Analysis, ARIMA, VAR, Statistical Modeling",
+		"year": 2024
 	},
 	{
-		"name": "L(O*62).ONG",
-		"description": "Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger",
-		"image": "/assets/images/projects/long.png",
-		"url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
+		"name": "Music Genre Recommendation",
+		"description": "Get curated genre playlist at ease.",
+		"image": "/assets/images/projects/music-recommendation-img.png",
+		"url": "https://github.com/quicksid/Music-Genre-Classification",
+		"detail_description": "Built a music genre recommendation system so accurate, it could DJ your life—used K-means clustering and CatBoost to high 81% validation accuracy.",
+		"tools": "Python, Numpy, Pandas, Classification, K-means Clustering, CatBoost, XGBoost",
+		"year": 2023
+	},
+	{
+		"name": "E-Consumers Segmentation",
+		"description": "Enhancing customer experience.",
+		"image": "/assets/images/projects/customer-segmentation-img.png",
+		"url": "https://www.google.com",
+		"detail_description": "Decoded e-commerce insights with customer segmentation using K-means and RFM analysis—the secret to happy customers and even happier sales teams!",
+		"tools": "R, Business Intelligence, Visualization, Clustering, RFM Analysis",
+		"year": 2023
+	},
+	{
+		"name": "Web Development",
+		"description": "UI/UX Design for Responsive Website.",
+		"image": "/assets/images/projects/creative-infotech-img.png",
+		"url": "https://www.creativeinfotech.co.in/",
+		"detail_description": "Designed and developed static responsive website utilizing core web development tools.",
+		"tools": "HTML5, CSS, Bootstrap, JavaScript",
+		"year": 2017
 	}
 ]

@@ -6,7 +6,7 @@ import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
 ---
 
-<Layout title="Kai">
+<Layout title="Siddharth's Portfolio">
   <div
     class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
   >
@@ -15,12 +15,12 @@ import Layout from "../layouts/main.astro";
         <h1
           class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
         >
-          Hello, I'm Kai.
+          Hello! I'm Sid.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a front-end programmer living in Nanjing. <br
+          Welcome to my portfolio site! I'm a data enthusiast, contemplative coder and soccer fanatic living in Buffalo, New York.<br
             class="hidden lg:block"
-          />I focus on Web development.
+          /></br><b>Machine Learning, Deep Learning, Data Warehousing, Data Analytics, Game Theory, Statistics, and others.</b>
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
@@ -28,13 +28,15 @@ import Layout from "../layouts/main.astro";
         <ul
           class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
         >
-          <li>Vue.js Development</li>
-          <li>React.js Development</li>
-          <li>Node.js Development</li>
-          <li>Website Design</li>
+          <li>ML Development</li>
+          <li>Predictive Modeling</li>
+          <li>Reinforcement Learning</li>
+          <li>ETL/ELT Development</li>
+          <li>Business Intelligence</li>
+          <li>Database Management</li>
           <li>and more...</li>
         </ul>
-        <Button text="Follow me on 𝕏" link="https://twitter.com/0xKaiBi" />
+        <Button text="Follow me on GitHub" link="https://github.com/quicksid" />
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
@@ -57,7 +59,7 @@ import Layout from "../layouts/main.astro";
               src="/assets/images/photo.png"
               loading="eager"
               decoding="auto"
-              class="relative z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
+              class="relative mt-6 mb-4 z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
             />
           </div>
           <div
@@ -71,6 +73,6 @@ import Layout from "../layouts/main.astro";
 
   <Separator text="Check out my projects" />
   <Projects />
-  <Separator text="Some of my writing" />
+  <Separator text="Some of my writings" />
   <Writings />
 </Layout>

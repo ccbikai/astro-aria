@@ -1,23 +1,42 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "January 2024 · Present",
+		"role": "Research Assistant",
+		"company": "Data, Decision & Risk Lab, University at Buffalo",
+		"description": "Collaborating on the SENTRY (DHS) project to optimize school security patrolling strategies using Bayesian Stackelberg models, game theory, real-world simulations, and Python-based tools.",
+		"logo": "/assets/images/experiences/ub-primary-small.png",
+		"skills": "Game Theory, Operation Research, Data Analytics, Python, SciPy, SimPy, Pandas"
 	},
 	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
+		"dates": "December 2021 · July 2023",
+		"role": "Application Development Analyst",
+		"company": "Accenture",
+		"description": "Developed AI-powered SynOps applications, optimized reporting systems with BigQuery and MongoDB, led data migrations from SSRS and SQL Server to PowerBI and BigQuery, and resolved 250+ ServiceNow data incidents and change requests with 100% efficiency.",
+		"logo": "/assets/images/experiences/accenture-logo.png",
+		"skills": "Business Intelligence (BI), Predictive Modeling, Data Visualization, Power BI, SSIS, SSRS, AWS, GCP, CRM, BigQuery, Hadoop"
 	},
 	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
+		"dates": "June 2021 · September 2021 ",
+		"role": "Data Analyst",
+		"company": "CRG Solutions Private Ltd.",
+		"description": "Automated ETL process using SSIS and constructed interactive dashboards using PowerBI for a banking institutional client to enhance the business for vehicle and mortgage loans.",
+		"logo": "/assets/images/experiences/crg-logo.png",
+		"skills": "ETL/ELT Development, Power BI, SSIS, SSRS, Data Modeling"
+	},
+	{
+		"dates": "June 2017 · August 2019 ",
+		"role": "Product Engineer",
+		"company": "Intellect Design Arena Pvt. Ltd.",
+		"description": "Spearheaded Data Warehouse development and performance optimization on AWS and SQL Server, ensuring 95%+ data accuracy through automation and earning recognition for exceptional client communication and timely delivery.",
+		"logo": "/assets/images/experiences/intellect-design-arena-logo.png",
+		"skills": "ETL/ELT Development, MSBI Tools, Data Warehousing, T-SQL, RDBMS, SQL-Server, Project Management"
+	},
+	{
+		"dates": "May 2016 · August 2016",
+		"role": "Intern Web-Design",
+		"company": "Creative Infotech Pvt. Ltd.",
+		"description": "Designed and developed a static, responsive website using HTML5, CSS, Bootstrap, and JavaScript, incorporating requirements gathering and web design principles to deliver a user-friendly responsive interface.",
+		"logo": "/assets/images/experiences/creative-infotech-logo.png",
+		"skills": "Web design, Web Development, HTML5, Bootstrap, CSS, Javascript, Requirement Gathering"
 	}
 ]

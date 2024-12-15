@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Welcome to QuantAnalytics: Data, Technology, Innovation, Life",
+        "date": "15 December 2024",
+        "description": "Hello, world! 🌟 Welcome to my new online home, QuantAnalytics—a place where data meets creativity, tech innovation blends with real-world applications, and soccer stories inspire. I’m Sid, a passionate data scientist and analytics enthusiast, and this is my little corner on the web to share insights, ideas, and stories with you. Why This Website? Over the years, I’ve worn many hats: from crunching numbers and building predictive models to exploring the latest in technology and cheering for my favorite soccer teams. Through all of this, one thing remained constant—my love for solving problems and sharing knowledge. QuantAnalytics is born out of this passion. This blog and portfolio are not just about showcasing projects or career milestones (though you’ll find plenty of those here). It’s also a platform to reflect on life’s lessons, share personal experiences, and keep you updated on trends in two of my favorite worlds: technology and soccer.",
+        "url": "https://www.google.com",
+        "image": "/assets/images/posts/flowchart.jpg",
+        "keywords": "Portfolio, Technology, Data Science, Analytics, Sports"
+    },
+    {
+        "id": 2,
+        "name": "Test Blog",
+        "date": "100 December 2024",
+        "description": "What to Expect Here’s a glimpse of what you can look forward to: Data Science and Analytics Projects Dive into the fascinating world of data with me. I’ll showcase projects like predicting IPO outcomes, customer segmentation, and machine learning innovations.",
+        "url": "https://www.google.com",
+        "image": "/assets/images/posts/code-canvas.jpg",
+        "keywords": "Test Keywords"
+    }
+]

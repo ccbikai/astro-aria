@@ -1,0 +1,32 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+import Button from "../components/button.astro";
+---
+
+<Layout title="Resume">
+  <section
+    class="relative z-20 items-center max-w-2xl mx-auto my-12 px-7 lg:px-0"
+  >
+    <PageHeading
+      title="My Resume 📃"
+      description="Below is my resume in PDF:"
+    />
+
+    <Button text="Download a Copy" link="/assets/pdf/resume_sid.pdf" />
+
+    <iframe
+      src="/assets/pdf/resume_sid.pdf"
+      width="100%"
+      height="600px"
+      class="relative z-30 my-10 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+    ></iframe>
+
+    <p class="mb-2 text-base text-neutral-600 dark:text-neutral-400">
+      Hope you liked the resume! 😊
+    </p>
+    
+  </section>
+</Layout>
