@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Extract GitHub OpenGraph Images for Card Previews
 description: Extract GitHub OpenGraph Images for Card Previews
-dateFormatted: Dec 19th, 2023
+dateFormatted: Dec 19, 2023
 ---
 
 Previously, when sharing GitHub on my blog, I always used [GitHub Repository Card](https://gh-card.dev/) for sharing, but it doesn't have good support for Chinese and doesn't support line breaks.

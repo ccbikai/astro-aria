@@ -23,4 +23,4 @@ This site only stores an email name for this session, and the emails are tempora
 
 ## Website
 
-[https://email.ml/](https://email.ml/) 
+[https://email.ml/](https://email.ml/)

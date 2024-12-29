@@ -35,7 +35,6 @@ Site Token: `SinkCool`
   <img alt="Link Management" src="https://static.miantiao.me/share/uQVX7Q/sink.cool_dashboard_links.png"/>
 </details>
 
-
 <details>
   <summary><b>Individual Link Analysis</b></summary>
   <img alt="Individual Link Analysis" src="https://static.miantiao.me/share/WfyCXT/sink.cool_dashboard_link_slug=0.png"/>

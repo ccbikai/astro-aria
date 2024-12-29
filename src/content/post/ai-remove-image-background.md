@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Browser locally uses AI to remove image backgrounds
 description: Browser locally uses AI to remove image backgrounds
-dateFormatted: Jul 14th, 2024
+dateFormatted: Jul 14, 2024
 ---
 
 Yo, so I've been digging into this whole AI thing for front-end development lately, and stumbled upon this cool Transformers.js example.  Turned it into a sweet little tool, check it out!
@@ -15,4 +15,4 @@ Here's the link to the tool: [https://html.zone/background-remover](https://html
 
 * * *
 
-Wanna build it yourself?  Head over to [https://github.com/xenova/transformers.js/tree/main/examples/remove-background-client](https://github.com/xenova/transformers.js/tree/main/examples/remove-background-client) for the source code.  Oh, and heads up, you gotta be on Transformers.js V3 to mess with WebGPU. 
+Wanna build it yourself?  Head over to [https://github.com/xenova/transformers.js/tree/main/examples/remove-background-client](https://github.com/xenova/transformers.js/tree/main/examples/remove-background-client) for the source code.  Oh, and heads up, you gotta be on Transformers.js V3 to mess with WebGPU.

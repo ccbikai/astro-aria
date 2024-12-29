@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Low-Cost Deployment of Federated Universe Personal Instances
 description: Low-Cost Deployment of Federated Universe Personal Instances
-dateFormatted: Nov 27th, 2023
+dateFormatted: Nov 27, 2023
 ---
 
 I came across the concept of the Fediverse at the beginning of this year and found that it is the social network I have always envisioned: each instance is like an isolated island, connected through the network to communicate with each other.

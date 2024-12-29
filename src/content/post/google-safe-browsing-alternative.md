@@ -23,7 +23,7 @@ Once I was done tweaking the settings, I got myself a shiny new DoH address:
 
 To hook it up to my project, I used this handy-dandy code:
 
-```
+```js
 async function isSafeUrl(
   url,
   DoH = "https://family.cloudflare-dns.com/dns-query"

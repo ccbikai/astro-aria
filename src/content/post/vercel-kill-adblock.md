@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Solving Vercel Analytics Blocked by AdBlock Issue
 description: Solving Vercel Analytics Blocked by AdBlock Issue
-dateFormatted: Jun 6th, 2024
+dateFormatted: Jun 6, 2024
 ---
 
 [DNS.Surf](https://dns.surf/) runs 100% on Vercel, so Vercel Analytics is used for access statistics. However, many users who have AdBlock installed experience issues with access statistics not being recorded. Today, we will solve the problem of AdBlock blocking access statistics, while still relying on Vercel 100%.

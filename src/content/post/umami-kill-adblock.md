@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Resolving Umami Blocked by AdBlock Issue
 description: Resolving Umami Blocked by AdBlock Issue
-dateFormatted: Jan 6th, 2024
+dateFormatted: Jan 6, 2024
 ---
 
 I recently redesigned my [personal homepage](https://mt.ci/) and used Umami for website analytics. However, there is an ongoing issue: users who have AdBlock installed are causing the analytics to fail.

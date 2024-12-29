@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Minimal Docker Image Packaging for Vite SSR Projects
 description: Minimal Docker Image Packaging for Vite SSR Projects
-dateFormatted: Sep 1st, 2024
+dateFormatted: Sep 1, 2024
 ---
 
 Recently, I've been preparing to migrate projects hosted on Cloudflare, Vercel, and Netlify to my own VPS to run via Docker. I revisited Docker image packaging. However, even a small project ended up being packaged into a 1.05GB image, which is clearly unacceptable. So, I researched minimal Docker image packaging for Node.js projects, reducing the image size from 1.06GB to 135MB.

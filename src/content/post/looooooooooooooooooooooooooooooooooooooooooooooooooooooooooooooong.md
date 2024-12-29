@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: L(O*62).ONG - Make your URL longer
 description: loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong is the longest domain name
-dateFormatted: Jun 1th, 2024
+dateFormatted: Jun 1, 2024
 ---
 
 [![GitHub](https://github.html.zone/ccbikai/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong)](https://github.com/ccbikai/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong)

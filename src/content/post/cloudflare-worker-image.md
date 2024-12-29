@@ -2,7 +2,7 @@
 layout: ../../layouts/post.astro
 title: Processing Images with Cloudflare Worker
 description: Processing Images with Cloudflare Worker
-dateFormatted: Nov 18th, 2023
+dateFormatted: Nov 18, 2023
 ---
 
 ## Background
