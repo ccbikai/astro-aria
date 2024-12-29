@@ -5,7 +5,7 @@ description: Turn your Telegram Channel into a MicroBlog
 dateFormatted: Aug 11, 2024
 ---
 
-I have been sharing some interesting tools on [X](https://404.li/x) and also synchronizing them to my Telegram Channel. I saw that [Austin mentioned he is preparing to create a website](https://x.com/austinit/status/1817832660758081651) to compile all the shared content. This reminded me of a template I recently came across called [Sepia](https://github.com/Planetable/SiteTemplateSepia), and I thought about converting the Telegram Channel into a microblog.
+I have been sharing some interesting tools on [X](https://x.com/0xKaibi) and also synchronizing them to my Telegram Channel. I saw that [Austin mentioned he is preparing to create a website](https://x.com/austinit/status/1817832660758081651) to compile all the shared content. This reminded me of a template I recently came across called [Sepia](https://github.com/Planetable/SiteTemplateSepia), and I thought about converting the Telegram Channel into a microblog.
 
 The difficulty wasn't high; I completed the main functionality over a weekend. During the process, I achieved a browser-side implementation with zero JavaScript and would like to share some interesting technical points:
 
