@@ -2,13 +2,5 @@
   {
     "name": "Inicio",
     "url": "/"
-  },
-  {
-    "name": "Proyectos",
-    "url": "/projects"
-  },
-  {
-    "name": "Sobre mi",
-    "url": "/about"
   }
 ]
