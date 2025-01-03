@@ -9,9 +9,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
 .image-hero__container {
-  @apply mt-8 w-full h-[75vh] grid grid-cols-2 justify-center items-center gap-[34rem] p-12 bg-fixed bg-top bg-cover bg-no-repeat shadow-md;
+  @apply w-full h-[75vh] grid grid-cols-2 justify-center items-center gap-[34rem] px-12 bg-top bg-cover bg-no-repeat shadow-md;
   background-image: url("/assets/images/Duo.webp");
 }
 
@@ -20,11 +30,11 @@
 }
 
 .image-hero__container .image-hero__container--item > h1 {
-  @apply text-5xl font-semibold;
+  @apply text-5xl font-semibold text-center;
 }
 
 .image-hero__container .image-hero__container--item > p {
-  @apply text-xl font-normal text-center;
+  @apply text-xl text-center text-gray-700;
 }
 
 /* .image-hero__container {
