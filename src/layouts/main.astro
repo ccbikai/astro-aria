@@ -11,15 +11,13 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-
-    <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
-      if (typeof Storage !== 'undefined') {
+      if (typeof Storage !== "undefined") {
         if (
-          localStorage.getItem('dark_mode') &&
-          localStorage.getItem('dark_mode') == 'true'
+          localStorage.getItem("dark_mode") &&
+          localStorage.getItem("dark_mode") == "true"
         ) {
-          document.documentElement.classList.add('dark')
+          document.documentElement.classList.add("dark");
         }
       }
     </script>
@@ -29,9 +27,8 @@ const { title } = Astro.props;
         border-radius: 20px;
       }
     </style>
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
     <script src="../assets/css/main.css"></script>
-    <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
   <body class="antialiased bg-white dark:bg-neutral-950">
     <SquareLines />
@@ -39,6 +36,5 @@ const { title } = Astro.props;
     <slot />
     <Footer />
     <script src="../assets/js/main.js"></script>
-    <Fragment set:html={import.meta.env.FOOTER_INJECT} />
   </body>
 </html>
