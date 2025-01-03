@@ -21,8 +21,18 @@ p {
 }
 
 .image-hero__container {
-  @apply w-full h-[75vh] grid grid-cols-2 justify-center items-center gap-[34rem] px-12 bg-top bg-cover bg-no-repeat shadow-md;
+  @apply relative w-full h-full grid grid-cols-1 justify-center items-center gap-12 p-12 bg-fixed bg-center bg-cover bg-no-repeat shadow-md;
+  @apply md:grid-cols-2 md:gap-52 md:h-[75vh];
+  @apply xl:grid-cols-2 xl:gap-[34rem] xl:h-[75vh] xl:bg-contain;
   background-image: url("/assets/images/Duo.webp");
+}
+
+.image-hero__container::after {
+  content: "";
+  @apply absolute inset-0 bg-black bg-opacity-25;
+  @apply md:hidden;
+  @apply xl:hidden;
+  z-index: 0; /* Asegúrate de que quede detrás del contenido */
 }
 
 .image-hero__container .image-hero__container--item {
@@ -30,11 +40,15 @@ p {
 }
 
 .image-hero__container .image-hero__container--item > h1 {
-  @apply text-5xl font-semibold text-center;
+  @apply text-5xl font-bold text-center text-gray-50 z-10 drop-shadow-sm;
+  @apply md:font-semibold md:text-gray-950;
+  @apply xl:font-semibold xl:text-gray-950;
 }
 
 .image-hero__container .image-hero__container--item > p {
-  @apply text-xl text-center text-gray-700;
+  @apply text-xl font-normal text-center text-gray-100 z-10 drop-shadow-sm;
+  @apply md:font-light md:text-gray-500;
+  @apply xl:font-light xl:text-gray-500;
 }
 
 /* .image-hero__container {
