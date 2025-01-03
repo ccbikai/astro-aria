@@ -10,5 +10,11 @@
     "description": "Diseño web centrado en una receta de cocina, destacando usabilidad y diseño visual atractivo.",
     "image": "/assets/images/projects/mamasAutonomas.png",
     "url": "https://www.figma.com/proto/OfuNjvAFnji3erw0NhXsHF/Mamas-Autonomas?node-id=2-16&t=4jUd9Lph6r0BYNDo-1"
+  },
+  {
+    "name": "Pinwheel",
+    "description": "SaaS landing page.",
+    "image": "/assets/images/projects/pinwheel.png",
+    "url": "https://www.figma.com/proto/OfuNjvAFnji3erw0NhXsHF/Mamas-Autonomas?node-id=2-16&t=4jUd9Lph6r0BYNDo-1"
   }
 ]
