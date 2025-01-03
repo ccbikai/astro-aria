@@ -16,5 +16,11 @@
     "description": "SaaS landing page.",
     "image": "/assets/images/projects/pinwheel.png",
     "url": "https://pinwheel-bdv.netlify.app/"
+  },
+  {
+    "name": "Astro Saas",
+    "description": "Astro landing page.",
+    "image": "/assets/images/projects/astroSaas.png",
+    "url": "https://astrosaas-bdv.netlify.app/"
   }
 ]
