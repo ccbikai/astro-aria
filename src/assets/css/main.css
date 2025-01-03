@@ -2,65 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-#sun {
-  transform: translate3d(0, 0px, 0);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#moon {
-  transform: translate3d(0, 0px, 0);
+.image-hero__container {
+  @apply mt-8 w-full h-[75vh] grid grid-cols-2 justify-center items-center gap-[34rem] p-12 bg-fixed bg-top bg-cover bg-no-repeat shadow-md;
+  background-image: url("/assets/images/Duo.webp");
 }
 
-#darkToggle:hover #sun {
-  transform: translate3d(0, 10px, 0);
+.image-hero__container .image-hero__container--item {
+  @apply flex flex-col justify-center items-center gap-8;
 }
 
-#darkToggle:hover #moon {
-  transform: translate3d(0, 10px, 0);
+.image-hero__container .image-hero__container--item > h1 {
+  @apply text-5xl font-semibold;
 }
 
-html.dark #darkToggle:hover .horizon {
-  border-color: #718096 !important;
+.image-hero__container .image-hero__container--item > p {
+  @apply text-xl font-normal text-center;
 }
 
-html.dark {
-  color-scheme: dark;
+/* .image-hero__container {
+  @apply relative flex w-full h-screen;
 }
 
-.horizon .setting {
-  animation: 1s ease 0s 1 setting;
+.half {
+  @apply absolute flex flex-col gap-8 p-12 justify-center items-center top-0 h-full w-1/2 bg-fixed bg-center bg-cover hover:w-full;
+  transition: width 0.5s ease-in-out;
 }
 
-.horizon .rising {
-  animation: 1s ease 0s 1 rising;
+.half > h1 {
+  @apply text-3xl;
 }
 
-@keyframes setting {
-  0% {
-    transform: translate3d(0, 10px, 0);
-  }
-
-  40% {
-    transform: translate3d(0, -2px, 0);
-  }
-
-  to {
-    transform: translate3d(0, 30px, 0);
-  }
+.half.left {
+  @apply left-0;
+  background-image: url("/assets/images/Color_4k.webp");
 }
 
-@keyframes rising {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0);
-  }
-
-  40% {
-    opacity: 1;
-    transform: translate3d(0, -2px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 10, 0);
-  }
+.half.right {
+  @apply right-0;
+  background-image: url("/assets/images/B&W_4k.webp");
 }
+
+.half.left:hover + .half.right {
+  @apply w-0;
+}
+
+.half.right:hover + .half.left {
+  @apply w-0;
+} */
