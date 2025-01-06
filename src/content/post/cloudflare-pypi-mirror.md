@@ -31,4 +31,4 @@ The corresponding code has been open-sourced and is available at:
 
 [https://github.com/ccbikai/cloudflare-pypi-mirror](https://github.com/ccbikai/cloudflare-pypi-mirror)
 
-[![Cloudflare PyPI Mirror](https://github.html.zone/ccbikai/cloudflare-pypi-mirror align="left")](https://github.com/ccbikai/cloudflare-pypi-mirror)
+[![Cloudflare PyPI Mirror](https://github.html.zone/ccbikai/cloudflare-pypi-mirror)](https://github.com/ccbikai/cloudflare-pypi-mirror)

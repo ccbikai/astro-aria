@@ -29,7 +29,7 @@ The main challenges faced and solutions:
 
 Eventually, we successfully implemented a MarkItDown tool that runs entirely in the browser. Feel free to try it out at [Office File to Markdown](https://www.html.zone/markitdown/).
 
-[![Office File to Markdown](https://cdn.hashnode.com/res/hashnode/image/upload/v1735289546403/26e6ce64-c6e2-4862-9040-7e9b434c7af9.png align="left")](https://www.html.zone/markitdown/)
+[![Office File to Markdown](https://www.html.zone/markitdown.png)](https://www.html.zone/markitdown/)
 
 Here's the core code for running Python in the Worker:
 
