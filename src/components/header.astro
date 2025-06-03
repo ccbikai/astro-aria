@@ -5,16 +5,17 @@ import Logo from "../components/logo.astro";
 
 <header
   id="header"
-  class="fixed top-0 z-50 w-full h-20 bg-white/30 dark:bg-neutral-900/30 backdrop-blur-md transition-transform duration-500 ease-in-out shadow-md"
+  class="fixed top-0 z-50 w-full h-20 bg-white/30 dark:bg-neutral-900/30 backdrop-blur-md shadow-md transition-all"
 >
   <div
-    class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
+    class="flex items-center justify-between h-full max-w-7xl px-4 md:px-6 mx-auto border-b border-transparent select-none"
   >
     <Logo />
 
     <nav
       class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row"
     >
+      <!-- Botón abrir menú mobile -->
       <div
         id="openMenu"
         class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
@@ -22,16 +23,15 @@ import Logo from "../components/logo.astro";
         <svg
           class="w-8 h-8 dark:text-neutral-200"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke="currentColor"
           stroke-width="2"
           viewBox="0 0 24 24"
-          stroke="currentColor"
         >
           <path d="M4 8h16M4 16h16"></path>
         </svg>
       </div>
 
+      <!-- Botón cerrar menú mobile -->
       <div
         id="closeMenu"
         class="flex flex-col items-end justify-center w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
@@ -39,26 +39,27 @@ import Logo from "../components/logo.astro";
         <svg
           class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          stroke="currentColor"
           stroke-width="2"
           viewBox="0 0 24 24"
-          stroke="currentColor"
         >
           <path d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </div>
 
+      <!-- Menú de navegación -->
       <div
         id="menu"
         class="fixed top-[75px] ease-out duration-300 sm:top-0 w-full left-0 sm:py-0 pt-7 pb-4 z-40 flex-col items-end justify-start hidden sm:relative sm:flex-row sm:flex sm:w-auto"
       >
+        <!-- Fondo blur para mobile -->
         <div class="absolute inset-0 sm:hidden px-3">
           <div
             class="relative w-full h-full bg-white border border-dashed border-neutral-300 dark:border-neutral-700 backdrop-blur-sm rounded-xl dark:bg-neutral-950"
           >
           </div>
         </div>
+
         {
           menus.map((menu) => (
             <a
@@ -73,34 +74,3 @@ import Logo from "../components/logo.astro";
     </nav>
   </div>
 </header>
-
-<!-- Script con IntersectionObserver para scroll snap -->
-<script is:inline>
-  const header = document.getElementById("header");
-  let lastIndex = 0;
-
-  const sections = document.querySelectorAll("section");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries.find((e) => e.isIntersecting);
-      if (!visible) return;
-
-      const currentIndex = [...sections].indexOf(visible.target);
-
-      if (currentIndex > lastIndex) {
-        // Bajando
-        header.classList.add("-translate-y-full");
-      } else {
-        // Subiendo
-        header.classList.remove("-translate-y-full");
-      }
-
-      lastIndex = currentIndex;
-    },
-    {
-      threshold: 0.6,
-    }
-  );
-
-  sections.forEach((section) => observer.observe(section));
-</script>

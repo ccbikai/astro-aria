@@ -29,7 +29,7 @@ window.evaluateHeaderPosition = () => {
   if (window.scrollY > 16) {
     headerElement.firstElementChild.classList.add(...stickyClassesContainer);
     headerElement.firstElementChild.classList.remove(
-      ...unstickyClassesContainer
+      ...unstickyClassesContainer,
     );
     headerElement.classList.add(...stickyClasses);
     headerElement.classList.remove(...unstickyClasses);

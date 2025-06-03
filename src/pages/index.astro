@@ -10,7 +10,7 @@ import Layout from "../layouts/main.astro";
 <Layout title="Brian Domínguez Vázquez">
   <div class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
     <!-- Hero section -->
-    <section class="snap-start h-screen image-hero__container z-10">
+    <section class="snap-start min-h-screen h-full image-hero__container z-10">
       <div class="image-hero__container--item">
         <h1>UI/UX Design</h1>
         <p>
@@ -33,10 +33,10 @@ import Layout from "../layouts/main.astro";
     <!-- Certificaciones -->
     <section
       id="certificaciones"
-      class="snap-start h-screen p-12 relative flex flex-col justify-center items-center gap-8 overflow-hidden shadow-md"
+      class="snap-start min-h-screen h-full p-12 relative flex flex-col justify-center items-center gap-8 overflow-hidden shadow-md"
     >
       <div
-        id="background-blur"
+        id="background-blur-certifications"
         class="absolute inset-0 z-10 bg-center bg-cover blur-xl transition-all scale-125 duration-700"
       >
       </div>
@@ -49,9 +49,14 @@ import Layout from "../layouts/main.astro";
     <!-- Proyectos -->
     <section
       id="proyectos"
-      class="snap-start h-screen p-12 flex flex-col justify-center items-center gap-8"
+      class="relative snap-start min-h-screen h-full p-12 flex flex-col justify-center items-center gap-8"
     >
-      <h1 class="text-4xl font-semibold text-center">
+      <div
+        id="background-blur-projects"
+        class="absolute inset-0 z-10 bg-center bg-cover blur-xl transition-all scale-125 duration-700"
+      >
+      </div>
+      <h1 class="text-4xl z-50 font-semibold text-center">
         Algunos de mis últimos trabajos 💼
       </h1>
       <Projects />

@@ -1,28 +1,63 @@
 ---
 import projects from "../../collections/projects.json";
-import Button from "../button.astro";
 import Project from "../project.astro";
 ---
 
-<section class="max-w-4xl mx-auto px-7 lg:px-0">
-  <div
-    class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7"
-  >
+<section class="relative w-full min-h-[600px]">
+  <!-- Slides contenedor -->
+  <div class="relative w-full h-full flex items-center justify-center">
     {
-      projects.map((project) => {
-        return (
-          <Project
-            name={project.name}
-            description={project.description}
-            image={project.image}
-            url={project.url}
-          />
-        );
-      })
+      projects.map((project, index) => (
+        <div
+          class={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 ${
+            index === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
+          } pointer-events-none`}
+          data-index-projects={index}
+          data-bg={project.image}
+        >
+          <div class="pointer-events-auto max-w-7xl w-full px-4 md:px-6 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+            <img
+              src={project.image}
+              alt={project.name}
+              class="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-xl border"
+            />
+            <div class="bg-white p-4 sm:p-6 shadow-2xl w-full md:w-1/2 text-sm sm:text-base rounded-lg">
+              <h2 class="text-xl font-semibold mb-2 text-neutral-800">
+                {project.name}
+              </h2>
+              <p class="text-gray-500 text-base leading-relaxed mb-4">
+                {project.description}
+              </p>
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-2 text-sm font-medium text-blue-600 hover:underline"
+              >
+                Ver proyecto →
+              </a>
+            </div>
+          </div>
+        </div>
+      ))
     }
   </div>
 
-  <!-- <div class="flex items-center justify-center w-full py-5">
-    <Button text="View All My Projects" link="/projects" />
-  </div> -->
+  <!-- Dots -->
+  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-50">
+    {
+      projects.map((_, index) => (
+        <button
+          class={`w-3 h-3 rounded-full hover:cursor-pointer ${
+            index === 0 ? "bg-gray-600 scale-125" : "bg-gray-300"
+          } transition-all`}
+          data-dot-index-projects={index}
+          aria-label={`Ir al proyecto ${index + 1}`}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Script -->
+  <script type="module" src="/scripts/slider-dots.js"></script>
 </section>
