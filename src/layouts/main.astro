@@ -6,7 +6,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,12 +21,12 @@ const { title } = Astro.props;
         }
       }
     </script>
-    <!-- <link rel="icon" type="image/x-icon" href="../assets/favicon.png" /> -->
-
     <link rel="stylesheet" href="https://use.typekit.net/lap0far.css" />
     <script src="../assets/css/main.css"></script>
   </head>
-  <body class="antialiased bg-white dark:bg-neutral-950">
+  <body
+    class="bg-white dark:bg-neutral-950 text-black dark:text-white h-screen overflow-hidden"
+  >
     <SquareLines />
     <Header />
     <slot />

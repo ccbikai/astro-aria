@@ -1,35 +1,60 @@
 ---
 import Button from "../components/button.astro";
 import Projects from "../components/home/projects.astro";
+import Certifications from "../components/home/certifications.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
 ---
 
 <Layout title="Brian Domínguez Vázquez">
-  <section class="image-hero__container">
-    <div class="image-hero__container--item">
-      <h1>UI/UX Design</h1>
-      <p>
-        Soy un diseñador de UI/UX apasionado por construir interfaces
-        funcionales y visualmente atractivas. Mi portafolio refleja cómo combino
-        creatividad y estrategia para resolver problemas reales de los usuarios.
-      </p>
-    </div>
-    <div class="image-hero__container--item">
-      <h1>Web Developer</h1>
-      <p>
-        Como desarrollador web, traduzco ideas en proyectos tangibles. Descubre
-        cómo utilizo tecnologías modernas para crear sitios dinámicos, rápidos y
-        optimizados para todo dispositivo.
-      </p>
-    </div>
-  </section>
-  <section class="p-12 flex flex-col justify-center items-center gap-8">
-    <h1 class="text-3xl font-semibold text-center">
-      Algunos de mis últimos trabajos 💼
-    </h1>
-    <Projects />
-  </section>
-  <!-- <Separator text="Check out my projects" />-->
+  <div class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+    <!-- Hero section -->
+    <section class="snap-start h-screen image-hero__container z-10">
+      <div class="image-hero__container--item">
+        <h1>UI/UX Design</h1>
+        <p>
+          Soy un diseñador de UI/UX apasionado por construir interfaces
+          funcionales y visualmente atractivas. Mi portafolio refleja cómo
+          combino creatividad y estrategia para resolver problemas reales de los
+          usuarios.
+        </p>
+      </div>
+      <div class="image-hero__container--item">
+        <h1>Web Developer</h1>
+        <p>
+          Como desarrollador web, traduzco ideas en proyectos tangibles.
+          Descubre cómo utilizo tecnologías modernas para crear sitios
+          dinámicos, rápidos y optimizados para todo dispositivo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section
+      id="certificaciones"
+      class="snap-start h-screen p-12 relative flex flex-col justify-center items-center gap-8 overflow-hidden shadow-md"
+    >
+      <div
+        id="background-blur"
+        class="absolute inset-0 z-10 bg-center bg-cover blur-xl transition-all scale-125 duration-700"
+      >
+      </div>
+      <h1 class="text-4xl z-50 font-semibold text-center">
+        Mis certificaciones 🎓
+      </h1>
+      <Certifications />
+    </section>
+
+    <!-- Proyectos -->
+    <section
+      id="proyectos"
+      class="snap-start h-screen p-12 flex flex-col justify-center items-center gap-8"
+    >
+      <h1 class="text-4xl font-semibold text-center">
+        Algunos de mis últimos trabajos 💼
+      </h1>
+      <Projects />
+    </section>
+  </div>
 </Layout>

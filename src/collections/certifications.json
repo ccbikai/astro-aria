@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Diseño para Programadores",
+    "description": "Aprendí a aplicar principios de diseño visual y experiencia de usuario en mis desarrollos. Ahora puedo crear interfaces más intuitivas, jerarquizadas y agradables sin depender totalmente de un diseñador.",
+    "image": "/assets/images/certifications/diploma-diseno-programadores.jpg",
+    "url": "https://platzi.com/@bridodev/"
+  },
+  {
+    "name": "React.js",
+    "description": "Domino los fundamentos de React y la construcción de interfaces basadas en componentes. Aprendí a manejar estados, props y el ciclo de vida para crear aplicaciones web modernas, escalables y reutilizables.",
+    "image": "/assets/images/certifications/diploma-reactjs.jpg",
+    "url": "https://platzi.com/@bridodev/"
+  },
+  {
+    "name": "Sistemas de Diseño",
+    "description": "Aprendí a crear y escalar sistemas de diseño que mejoran la consistencia visual en proyectos grandes. Entendí cómo organizar componentes, definir tokens y documentar patrones de forma clara y colaborativa.",
+    "image": "/assets/images/certifications/diploma-sistemas-diseno.jpg",
+    "url": "https://platzi.com/@bridodev/"
+  },
+  {
+    "name": "Tailwind CSS",
+    "description": "Aprendí a crear interfaces rápidas y personalizadas usando clases utilitarias con Tailwind. Mejoré mi flujo de trabajo al evitar hojas de estilo complejas y enfocarme en estructura, diseño y eficiencia.",
+    "image": "/assets/images/certifications/diploma-tailwind.jpg",
+    "url": "https://platzi.com/@bridodev/"
+  },
+  {
+    "name": "Sistemas de Diseño con Figma",
+    "description": "Aprendí a construir un sistema de diseño completo desde Figma, con componentes reutilizables, variantes, estilos de texto, espaciado y color. Ahora documento y comparto diseños listos para desarrollo.",
+    "image": "/assets/images/certifications/diploma-figma-sistemas-diseno.jpg",
+    "url": "https://platzi.com/@bridodev/"
+  }
+]

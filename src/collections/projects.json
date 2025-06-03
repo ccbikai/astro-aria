@@ -1,15 +1,9 @@
 [
   {
-    "name": "Salsa tio agust.",
-    "description": "Diseño web centrado en una receta de cocina, destacando usabilidad y diseño visual atractivo.",
-    "image": "/assets/images/projects/salsaAgust.png",
-    "url": "https://salsatipotioagus.com"
-  },
-  {
     "name": "Mamas autonomas",
     "description": "Diseño web centrado en una receta de cocina, destacando usabilidad y diseño visual atractivo.",
     "image": "/assets/images/projects/mamasAutonomas.png",
-    "url": "https://www.figma.com/proto/OfuNjvAFnji3erw0NhXsHF/Mamas-Autonomas?node-id=2-16&t=4jUd9Lph6r0BYNDo-1"
+    "url": "https://mamasautonomas.com/"
   },
   {
     "name": "Pinwheel",

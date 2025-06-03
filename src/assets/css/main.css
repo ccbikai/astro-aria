@@ -21,9 +21,9 @@ p {
 }
 
 .image-hero__container {
-  @apply relative w-full h-full grid grid-cols-1 justify-center items-center gap-12 p-12 bg-fixed bg-center bg-cover bg-no-repeat shadow-md;
-  @apply md:grid-cols-2 md:gap-52 md:h-[75vh];
-  @apply xl:grid-cols-2 xl:gap-[34rem] xl:h-[75vh] xl:bg-contain;
+  @apply relative w-full grid grid-cols-1 justify-center items-center gap-12 p-12 bg-fixed bg-center bg-cover bg-no-repeat shadow-md;
+  @apply md:grid-cols-2 md:gap-52;
+  @apply xl:grid-cols-2 xl:gap-[34rem] xl:bg-contain;
   background-image: url("/assets/images/Duo.webp");
 }
 
