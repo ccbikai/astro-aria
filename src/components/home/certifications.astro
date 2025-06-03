@@ -32,11 +32,13 @@ import certifications from "../../collections/certifications.json";
   </div>
 
   <!-- Dots -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+  <div
+    class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-3 z-[999999]"
+  >
     {
       certifications.map((_, index) => (
         <button
-          class={`w-3 h-3 rounded-full hover:cursor-pointer z-50 ${
+          class={`w-3 h-3 rounded-full hover:cursor-pointer ${
             index === 0 ? "bg-gray-600 scale-125" : "bg-gray-300"
           } transition-all`}
           data-dot-index={index}
