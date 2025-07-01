@@ -1,7 +1,25 @@
+---
+import { Image } from 'astro:assets'
+---
+
 <a
   href="/"
   class="h-5 text-base group relative z-30 flex items-center space-x-1.5 text-black dark:text-white font-semibold"
 >
-  <img src="/assets/logo/logo_light.svg" alt="Logo Light" class="block dark:hidden" width="160" />
-  <img src="/assets/logo/logo_dark.svg" alt="Logo Dark" class="hidden dark:block" width="160" />
+  <Image
+    src="/assets/logo/logo_light.svg"
+    alt="Logo Light"
+    class="block dark:hidden"
+    width="160"
+    height="29"
+    loading="eager"
+  />
+  <Image
+    src="/assets/logo/logo_dark.svg"
+    alt="Logo Dark"
+    class="hidden dark:block"
+    width="160"
+    height="29"
+    loading="eager"
+  />
 </a>

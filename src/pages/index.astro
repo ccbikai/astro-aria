@@ -1,6 +1,7 @@
 ---
 // import Button from '../components/button.astro'
 // import Projects from '../components/home/projects.astro'
+import { Image } from 'astro:assets'
 import Separator from '../components/home/separator.astro'
 import Writings from '../components/home/writings.astro'
 import Layout from '../layouts/main.astro'
@@ -30,10 +31,13 @@ import Layout from '../layouts/main.astro'
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
       >
         <div class="relative z-50 w-full">
-          <img
+          <Image
             src="/assets/images/photo.jpg"
             loading="eager"
             decoding="auto"
+            alt="Aozaki's Avatar"
+            width={500}
+            height={500}
             class="relative z-30 w-full aspect-[790/790] md:max-w-md mx-auto dark:-translate-y-0.5 rounded-2xl"
           />
         </div>
