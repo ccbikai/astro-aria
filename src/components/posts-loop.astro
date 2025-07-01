@@ -5,8 +5,16 @@ const allPosts = await getCollection('post')
 const { count } = Astro.props
 
 function parseDate(dateStr) {
-  const [month, day, year] = dateStr.split(' ')
-  return new Date(`${month} ${parseInt(day)}, ${year}`)
+  const [year, month, day] = dateStr.split('/').map(Number)
+  return new Date(year, month - 1, day)
+}
+
+function formatDate(dateStr) {
+  const date = parseDate(dateStr)
+  const y = date.getFullYear()
+  const m = date.getMonth() + 1
+  const d = date.getDate()
+  return `${y} 年 ${m} 月 ${d} 日`
 }
 
 const sortedPosts = allPosts
@@ -19,6 +27,7 @@ const sortedPosts = allPosts
 const postsLoop = sortedPosts.slice(0, count).map(post => {
   return {
     ...(post.data || {}),
+    dateFormatted: formatDate(post.data.dateFormatted),
     link: `/post/${post.slug}`,
   }
 })
@@ -28,10 +37,10 @@ const postsLoop = sortedPosts.slice(0, count).map(post => {
   postsLoop.map(post => {
     return (
       <div
-        class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"
+        class="relative border border-transparent border-dashed cursor-pointer p-4 group rounded-2xl"
         onclick={`location.href = '${post.link}'`}
       >
-        <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-dashed dark:bg-neutral-950 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
+        <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-dashed dark:bg-neutral-900 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
         <div class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1" />
         <div class="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
           <h2 class="flex items-center mb-3">

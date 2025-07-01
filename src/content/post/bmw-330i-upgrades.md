@@ -1,6 +1,6 @@
 ---
 title: 'BMW 330i 新车 & 升级'
-dateFormatted: June 22nd, 2025
+dateFormatted: 2025/6/22
 description: '人生第一辆自己买的车，还有计划已久的升级'
 image: https://img.aozaki.cc/20250622/cover.jpg
 ---
