@@ -1,29 +1,29 @@
 ---
-import Button from "../components/button.astro";
-import Projects from "../components/home/projects.astro";
-import Separator from "../components/home/separator.astro";
-import Writings from "../components/home/writings.astro";
-import Layout from "../layouts/main.astro";
+import Button from '../components/button.astro'
+import Projects from '../components/home/projects.astro'
+import Separator from '../components/home/separator.astro'
+import Writings from '../components/home/writings.astro'
+import Layout from '../layouts/main.astro'
 ---
 
 <Layout title="Kai">
-  <div
-    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
-  >
+  <div class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0">
     <div class="flex flex-col items-center md:flex-row">
       <div class="relative w-full md:w-1/2">
-        <h1
-          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
-        >
+        <h1 class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white">
           Aozaki
         </h1>
         <div class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
           <p>
-            <span class="pr-2">医生</span><span class="pr-2">/</span><span class="pr-2">心血管内科</span><span class="pr-2">/</span><span>M.D.</span>
+            <span class="pr-2">医生</span><span class="pr-2">/</span><span class="pr-2"
+              >心血管内科</span
+            ><span class="pr-2">/</span><span>M.D.</span>
           </p>
-          
+
           <p class="pt-4">
-            <span class="pr-2">音乐</span><span class="pr-2">/</span><span class="pr-2">电影</span><span class="pr-2">/</span><span>阅读</span></p>
+            <span class="pr-2">音乐</span><span class="pr-2">/</span><span class="pr-2">电影</span
+            ><span class="pr-2">/</span><span>阅读</span>
+          </p>
         </div>
       </div>
       <div
@@ -61,10 +61,9 @@ import Layout from "../layouts/main.astro";
 
   <Separator text="一些随兴而写的文章" />
   <Writings />
-  
+
   <!-- 
   <Separator text="Check out my projects" />
   <Projects /> 
   -->
-  
 </Layout>

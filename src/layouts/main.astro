@@ -1,8 +1,8 @@
 ---
-import Footer from "../components/footer.astro";
-import Header from "../components/header.astro";
-import SquareLines from "../components/square-lines.astro";
-const { title } = Astro.props;
+import Footer from '../components/footer.astro'
+import Header from '../components/header.astro'
+import SquareLines from '../components/square-lines.astro'
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -15,10 +15,7 @@ const { title } = Astro.props;
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
       if (typeof Storage !== 'undefined') {
-        if (
-          localStorage.getItem('dark_mode') &&
-          localStorage.getItem('dark_mode') == 'true'
-        ) {
+        if (localStorage.getItem('dark_mode') && localStorage.getItem('dark_mode') == 'true') {
           document.documentElement.classList.add('dark')
         }
       }

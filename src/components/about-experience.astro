@@ -1,5 +1,5 @@
 ---
-const { logo, dates, role, company, description } = Astro.props;
+const { logo, dates, role, company, description } = Astro.props
 ---
 
 <div class="relative flex flex-col justify-start pl-12">
@@ -9,9 +9,7 @@ const { logo, dates, role, company, description } = Astro.props;
     <img src={logo} alt={company} class="w-8 h-8" />
   </div>
 
-  <p
-    class="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest"
-  >
+  <p class="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest">
     {dates}
   </p>
   <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{role}</h3>

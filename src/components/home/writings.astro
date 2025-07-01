@@ -1,24 +1,18 @@
 ---
-import Button from "../button.astro";
-import PostsLoop from "../posts-loop.astro";
+import Button from '../button.astro'
+import PostsLoop from '../posts-loop.astro'
 
-const feed = "https://feed.miantiao.me/";
+const feed = 'https://feed.miantiao.me/'
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
-  <h2
-    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
-  >
+  <h2 class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100">
     博客
   </h2>
-  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-    我的思考，我的随笔
-  </p>
+  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">我的思考，我的随笔</p>
 
   <div class="w-full max-w-4xl mx-auto my-7 xl:px-0">
-    <div
-      class="flex flex-col items-start justify-start md:flex-row md:space-x-7"
-    >
+    <div class="flex flex-col items-start justify-start md:flex-row md:space-x-7">
       <div class="w-full md:w-2/3 space-y-7">
         <PostsLoop count="3" />
 
@@ -46,9 +40,7 @@ const feed = "https://feed.miantiao.me/";
                 d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
               ></path></svg
             >
-            <h2
-              class="flex text-sm font-semibold text-neutral-900 dark:text-neutral-100"
-            >
+            <h2 class="flex text-sm font-semibold text-neutral-900 dark:text-neutral-100">
               订阅我的博客
             </h2>
           </div>
@@ -59,8 +51,7 @@ const feed = "https://feed.miantiao.me/";
               >Feedly</a
             >, <a
               class="font-bold"
-              href={`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`}
-              >Inoreader</a
+              href={`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`}>Inoreader</a
             > or <a class="font-bold" href={feed}>RSS</a>.
           </p>
           <div class="flex flex-col items-center w-full mt-4 space-y-3">

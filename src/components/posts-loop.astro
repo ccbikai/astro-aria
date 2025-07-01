@@ -1,31 +1,31 @@
 ---
-import { getCollection } from "astro:content";
-const allPosts = await getCollection("post");
+import { getCollection } from 'astro:content'
+const allPosts = await getCollection('post')
 
-const { count } = Astro.props;
+const { count } = Astro.props
 
 function parseDate(dateStr) {
-  const [month, day, year] = dateStr.split(" ");
-  return new Date(`${month} ${parseInt(day)}, ${year}`);
+  const [month, day, year] = dateStr.split(' ')
+  return new Date(`${month} ${parseInt(day)}, ${year}`)
 }
 
 const sortedPosts = allPosts
-  .map((post) => ({
+  .map(post => ({
     ...post,
     date: parseDate(post.data.dateFormatted),
   }))
-  .sort((a, b) => b.date.getTime() - a.date.getTime());
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
 
-const postsLoop = sortedPosts.slice(0, count).map((post) => {
+const postsLoop = sortedPosts.slice(0, count).map(post => {
   return {
     ...(post.data || {}),
     link: `/post/${post.slug}`,
-  };
-});
+  }
+})
 ---
 
 {
-  postsLoop.map((post) => {
+  postsLoop.map(post => {
     return (
       <div
         class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"

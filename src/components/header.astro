@@ -1,19 +1,19 @@
 ---
-import menus from "../collections/menu.json";
-import Logo from "../components/logo.astro";
+import menus from '../collections/menu.json'
+import Logo from '../components/logo.astro'
 ---
 
 <!-- 立即设定主题，避免闪烁 -->
 <script is:inline>
-(function () {
-  try {
-    const stored = localStorage.getItem('dark_mode');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (stored === 'true' || (stored === null && prefersDark)) {
-      document.documentElement.classList.add('dark');
-    }
-  } catch (_) {}
-})();
+  ;(function () {
+    try {
+      const stored = localStorage.getItem('dark_mode')
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (stored === 'true' || (stored === null && prefersDark)) {
+        document.documentElement.classList.add('dark')
+      }
+    } catch (_) {}
+  })()
 </script>
 
 <!-- 占位：与 header 等高，避免内容跳动 -->
@@ -30,7 +30,8 @@ import Logo from "../components/logo.astro";
       id="mobileMenuBackground"
       onclick="closeMobileMenu()"
       class="fixed inset-0 z-20 hidden w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90"
-    ></div>
+    >
+    </div>
 
     <nav
       class="relative z-30 flex flex-row-reverse justify-start text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row"
@@ -47,8 +48,8 @@ import Logo from "../components/logo.astro";
           stroke-linejoin="round"
           stroke-width="2"
           viewBox="0 0 24 24"
-          stroke="currentColor"
-        ><path d="M4 8h16M4 16h16"></path></svg>
+          stroke="currentColor"><path d="M4 8h16M4 16h16"></path></svg
+        >
       </div>
 
       <!-- 关闭按钮 -->
@@ -63,8 +64,8 @@ import Logo from "../components/logo.astro";
           stroke-linejoin="round"
           stroke-width="2"
           viewBox="0 0 24 24"
-          stroke="currentColor"
-        ><path d="M6 18L18 6M6 6l12 12"></path></svg>
+          stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg
+        >
       </div>
 
       <!-- 菜单 -->
@@ -75,14 +76,17 @@ import Logo from "../components/logo.astro";
         <div class="absolute inset-0 top-0 right-0 block w-full h-full px-3 sm:hidden">
           <div
             class="relative w-full h-full bg-white border border-dashed border-neutral-300 dark:border-neutral-700 backdrop-blur-sm rounded-xl dark:bg-neutral-950"
-          ></div>
+          >
+          </div>
         </div>
         {
-          menus.map((menu) => (
+          menus.map(menu => (
             <a
               href={menu.url}
               class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
-            >{menu.name}</a>
+            >
+              {menu.name}
+            </a>
           ))
         }
       </div>
@@ -105,7 +109,10 @@ import Logo from "../components/logo.astro";
             stroke-width="2"
             viewBox="0 0 24 24"
             stroke="currentColor"
-          ><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            ><path
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+            ></path></svg
+          >
 
           <!-- 月亮 -->
           <svg
@@ -117,7 +124,10 @@ import Logo from "../components/logo.astro";
             stroke-width="2"
             viewBox="0 0 24 24"
             stroke="currentColor"
-          ><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            ><path
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+            ></path></svg
+          >
         </div>
       </div>
     </nav>
