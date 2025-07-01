@@ -13,7 +13,7 @@ const Photo = ({ Title }: Props) => {
     return null // or render a fallback component
   }
 
-  const { title, amount, date: PublishDate } = data
+  const { title, amount, dateFormatted: PublishDate } = data
   const Year = PublishDate.slice(0, 4)
   const Url = `/photography#` + title.toLowerCase()
 
