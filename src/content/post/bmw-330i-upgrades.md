@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: "BMW 330i 新车 & 升级"
 dateFormatted: June 22nd, 2025
 description: "人生第一辆自己买的车，还有计划已久的升级"

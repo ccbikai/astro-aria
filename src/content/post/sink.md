@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/post.astro
 title: Sink - A short link system based on Cloudflare with visit statistics
 description: A short link system based on Cloudflare with visit statistics
 dateFormatted: Jun 4th, 2024
