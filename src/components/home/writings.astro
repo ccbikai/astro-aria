@@ -2,7 +2,7 @@
 import Button from '../button.astro'
 import PostsLoop from '../posts-loop.astro'
 
-const feed = 'https://feed.miantiao.me/'
+const feed = 'https://feed.aozaki.cc/'
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
@@ -45,14 +45,11 @@ const feed = 'https://feed.miantiao.me/'
             </h2>
           </div>
           <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-            Get my blog updates via <a
-              class="font-bold"
-              href={`https://feedly.com/i/subscription/feed%2F${encodeURIComponent(feed)}`}
-              >Feedly</a
-            >, <a
+            可以通过
+            <a
               class="font-bold"
               href={`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`}>Inoreader</a
-            > or <a class="font-bold" href={feed}>RSS</a>.
+            > 或 <a class="font-bold" href={feed}>RSS</a> 订阅，RSS 地址：
           </p>
           <div class="flex flex-col items-center w-full mt-4 space-y-3">
             <input

@@ -1,12 +1,12 @@
 ---
-import Button from '../components/button.astro'
-import Projects from '../components/home/projects.astro'
+// import Button from '../components/button.astro'
+// import Projects from '../components/home/projects.astro'
 import Separator from '../components/home/separator.astro'
 import Writings from '../components/home/writings.astro'
 import Layout from '../layouts/main.astro'
 ---
 
-<Layout title="Kai">
+<Layout title="Aozaki's blog">
   <div class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0">
     <div class="flex flex-col items-center md:flex-row">
       <div class="relative w-full md:w-1/2">
@@ -30,30 +30,12 @@ import Layout from '../layouts/main.astro'
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
       >
         <div class="relative z-50 w-full">
-          <div
-            class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
-          >
-            <span
-              class="relative z-20 flex items-center justify-center w-full h-full text-2xl border-8 border-white rounded-full dark:border-neutral-950 bg-neutral-100 dark:bg-neutral-900"
-            >
-              <span
-                class="flex items-center justify-center w-full h-full bg-white border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700"
-                >👋</span
-              >
-            </span>
-          </div>
-          <div class="relative z-30 px-10">
-            <img
-              src="/assets/images/photo.png"
-              loading="eager"
-              decoding="auto"
-              class="relative z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
-            />
-          </div>
-          <div
-            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
-          >
-          </div>
+          <img
+            src="/assets/images/photo.jpg"
+            loading="eager"
+            decoding="auto"
+            class="relative z-30 w-full aspect-[790/790] md:max-w-md mx-auto dark:-translate-y-0.5 rounded-2xl"
+          />
         </div>
       </div>
     </div>
