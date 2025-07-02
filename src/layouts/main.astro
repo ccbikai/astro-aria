@@ -3,6 +3,8 @@ import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
 import SquareLines from '../components/square-lines.astro'
 const { title } = Astro.props
+
+import './src/styles/global.css'
 ---
 
 <!doctype html>
@@ -27,7 +29,6 @@ const { title } = Astro.props
       }
     </style>
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
-    <script src="../assets/css/main.css"></script>
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
   <body class="antialiased bg-white dark:bg-neutral-900">

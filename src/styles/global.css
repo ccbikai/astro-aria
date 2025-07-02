@@ -1,4 +1,8 @@
-@import 'tailwindcss';
+@import 'tailwindcss' layer(utilities);
+
+@import 'tailwindcss/utilities' layer(utilities);
+
+@plugin "@tailwindcss/typography";
 
 /* Add Your Custom CSS Here */
 

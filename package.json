@@ -19,12 +19,13 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.13",
-    "tailwindcss": "^3",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@iconify-json/cib": "^1.2.2",
     "@iconify-json/fa6-brands": "^1.2.5",
+    "@tailwindcss/vite": "^4.1.11",
     "astro-icon": "^1.1.5"
   }
 }
