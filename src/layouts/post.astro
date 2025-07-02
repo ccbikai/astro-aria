@@ -1,6 +1,21 @@
 ---
 import Layout from './main.astro'
 const { frontmatter } = Astro.props
+
+function parseDate(dateStr) {
+  const [year, month, day] = dateStr.split('/').map(Number)
+  return new Date(year, month - 1, day)
+}
+
+function formatDate(dateStr) {
+  const date = parseDate(dateStr)
+  const y = date.getFullYear()
+  const m = date.getMonth() + 1
+  const d = date.getDate()
+  return `${y} 年 ${m} 月 ${d} 日`
+}
+
+const postDate = formatDate(frontmatter.dateFormatted)
 ---
 
 <Layout title={frontmatter.title}>
@@ -22,6 +37,14 @@ const { frontmatter } = Astro.props
         class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
       >
         {frontmatter.title}
+        <div>
+          <time
+            class="text-sm tracking-wide text-neutral-500 dark:text-neutral-400"
+            datetime="2025-04-23T14:01:48.936Z"
+          >
+            {postDate}
+          </time>
+        </div>
       </h1>
     </div>
 
