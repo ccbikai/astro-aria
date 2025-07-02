@@ -2,9 +2,17 @@
 import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
 import SquareLines from '../components/square-lines.astro'
-const { title } = Astro.props
 
-import '..//styles/global.css'
+const DEFAULT_DESCRIPTION =
+  "Aozaki的个人博客，偶尔写点东西。 / Aozaki's blog, writing to record my life and hobbies."
+const DEFAULT_IMAGE = 'https://img.aozaki.cc/twitter-card.jpg'
+
+const { title, description, image } = Astro.props
+const metaDescription = description ?? DEFAULT_DESCRIPTION
+const metaImage = image ?? DEFAULT_IMAGE
+const isArticle = Boolean(description || image)
+
+import '../styles/global.css'
 ---
 
 <!doctype html>
@@ -13,6 +21,15 @@ import '..//styles/global.css'
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {metaDescription && <meta name="description" content={metaDescription} />}
+    {title && <meta property="og:title" content={title} />}
+    {metaDescription && (
+      <meta property="og:description" content={metaDescription} />
+    )}
+    {metaImage && <meta property="og:image" content={metaImage} />}
+    {isArticle && (
+      <meta property="og:type" content="article" />
+    )}
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
