@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aozaki-astro-blog",
+  // Update to today's date
+  "compatibility_date": "2025-07-02",
+  "assets": {
+    "directory": "./dist"
+  }
+}

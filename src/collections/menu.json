@@ -3,10 +3,7 @@
     "name": "博客",
     "url": "/posts"
   },
-  {
-    "name": "项目",
-    "url": "/projects"
-  },
+  
   {
     "name": "关于",
     "url": "/about"
