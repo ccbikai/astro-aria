@@ -18,7 +18,11 @@ function formatDate(dateStr) {
 const postDate = formatDate(frontmatter.dateFormatted)
 ---
 
-<Layout title={frontmatter.title}>
+<Layout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  image={frontmatter.image}
+>
   <main
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-900 md:rounded-t-md text-neutral-900"
   >

@@ -2,7 +2,7 @@
 import Footer from '../components/footer.astro'
 import Header from '../components/header.astro'
 import SquareLines from '../components/square-lines.astro'
-const { title } = Astro.props
+const { title, description, image } = Astro.props
 
 import '..//styles/global.css'
 ---
@@ -13,6 +13,13 @@ import '..//styles/global.css'
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {title && <meta property="og:title" content={title} />}
+    {description && <meta property="og:description" content={description} />}
+    {image && <meta property="og:image" content={image} />}
+    {(description || image) && (
+      <meta property="og:type" content="article" />
+    )}
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
