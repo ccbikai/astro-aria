@@ -22,14 +22,19 @@ import '../styles/global.css'
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     {metaDescription && <meta name="description" content={metaDescription} />}
+
+    <!-- Open Graph -->
     {title && <meta property="og:title" content={title} />}
-    {metaDescription && (
-      <meta property="og:description" content={metaDescription} />
-    )}
+    {metaDescription && <meta property="og:description" content={metaDescription} />}
     {metaImage && <meta property="og:image" content={metaImage} />}
-    {isArticle && (
-      <meta property="og:type" content="article" />
-    )}
+    {isArticle && <meta property="og:type" content="article" />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    {title && <meta property="twitter:title" content={title} />}
+    {metaDescription && <meta property="twitter:description" content={metaDescription} />}
+    {metaImage && <meta name="twitter:image" content={metaImage} />}
+    <meta property="twitter:site" content="@Aozaki__" />
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
