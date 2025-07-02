@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import experiences from '../collections/experiences.json'
 import AboutExperience from '../components/about-experience.astro'
 import PageHeading from '../components/page-heading.astro'
@@ -7,20 +8,35 @@ import Layout from '../layouts/main.astro'
 
 <Layout title="About Me">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
-    <PageHeading
-      title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
+    <PageHeading title="关于" description="👋 我是 Aozaki，常驻上海的心血管内科医生。" />
+
+    <Image
+      src="/assets/images/banner.jpg"
+      width="1500"
+      height="683"
+      alt="banner"
+      class="relative z-30 w-full my-10 rounded-xl"
     />
 
-    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
-
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200"></h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      Front-end cutter 🧑🏻‍💻, back-end amateur 🤷🏻‍♂️, operations digging holes person 🤦🏻‍♂️.
+      上面是我以前的摄影作品。学生时代我非常喜欢拍照和旅行。可惜工作后时间明显减少，不得不放下相机，偶尔才会出来拍拍照。
+      <br />
+      现在更多时间会用在看电影、阅读和享受音乐上。
+      <br />
+      <Image
+        src="/assets/images/car.jpg"
+        width="1500"
+        height="683"
+        alt="My car"
+        class="relative z-30 w-full my-10 rounded-xl"
+      />
+      最近呢又喜欢上了开车和对爱车进行升级，也算是新爱好吧。
     </p>
 
+    <!--
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experience</h2>
     <div class="px-5 py-10">
       {
@@ -55,5 +71,7 @@ import Layout from '../layouts/main.astro'
         class="text-indigo-600 underline">email</a
       > and I'll be sure to get back to you.
     </p>
+
+     -->
   </section>
 </Layout>
